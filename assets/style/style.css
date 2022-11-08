@@ -1,0 +1,192 @@
+/*-----------------------------------------------------------------
+    Importação das fontes
+*/
+
+/*-------------------------------------
+      Importação da fonte Inter
+  */
+
+@font-face {
+  font-family: "Inter";
+  src: url("../assets/fonts/Inter/Inter-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("../assets/fonts/Inter/Inter-Thin.ttf");
+  font-weight: 100;
+}
+
+/*-----------------------------------------------------------------
+    Estilo base
+*/
+@media (min-width: 1px) and (max-width: 762px) {
+  div.Home > div.button {
+    margin: 0 auto;
+  }
+
+  div.Home > div.button > a > span {
+    font-size: 0.8em;
+  }
+  div.catia > div > div > div > img {
+    transform: translate(10%, 10%);
+  }
+}
+
+@media (min-width: 763px) and (max-width: 1023px) {
+  div.Home > div.button {
+    margin: 0 auto;
+  }
+
+  div.Home > div.button > a > span {
+    font-size: 0.8em;
+  }
+  div.catia > div > div > div > img {
+    transform: translate(2%, 10%);
+  }
+}
+
+@media (min-width: 1024px) {
+  div.Home > div.button {
+  }
+
+  div.Home > div.button > a > span {
+    font-size: 1.2em;
+  }
+
+  div.catia > div > div > div > img {
+    transform: translate(12%, 10%);
+  }
+
+  #div-image-one {
+    width: 120%;
+  }
+}
+
+/*-------------------------------------
+      Estilo dos elementos
+  */
+
+/*------------------------
+      Home
+  */
+
+div.Home::after {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+div.Home {
+  background-image: url(../images/Prancheta1.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: cover;
+  background-color: #2e0b35;
+  height: 840px;
+  max-height: 1080px;
+}
+div.Home > header {
+}
+div.Home > div {
+  margin: 0 auto;
+
+  transform: translate(-50%, 0);
+}
+div.Home > div > h1 {
+  color: #fff;
+  font-weight: 400;
+  text-align: center;
+}
+
+div.Home > div > h1 > span {
+  font-weight: 600;
+  color: rgba(91, 161, 161, 1);
+}
+div.Home > div > h4 {
+  color: #fff;
+  text-align: center;
+}
+div.Home > div.button {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
+div.Home > div.button > a {
+  display: block;
+  border: none;
+  background-color: rgba(91, 161, 161, 1);
+  margin: 0 auto;
+  text-align: center;
+}
+div.Home > div.button > a > span {
+  color: #fff;
+  text-align: center;
+}
+
+/*------------------------
+      Bons investimentos
+  */
+
+div.bons-inves > div:nth-child(1) {
+  background-image: url(../images/Prancheta3.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: cover;
+
+  min-height: 250px;
+}
+div.bons-inves > div {
+}
+
+div.bons-inves > div > div.container {
+}
+div.bons-inves > div > div > h2 {
+  color: #fff;
+  font-weight: 400;
+}
+div.bons-inves > div > div > h2 > span {
+  color: rgba(91, 161, 161, 1);
+}
+
+/*------------------------
+      Catia
+  */
+
+div.catia {
+}
+div.catia > div {
+  background-color: rgba(91, 161, 161, 1);
+  display: flex;
+  flex-wrap: wrap;
+}
+div.catia > div > div {
+}
+div.catia > div > div > h2 {
+  font-weight: 400;
+  color: #2e0b35;
+}
+div.catia > div > div > h2 > span {
+  font-weight: 600;
+}
+div.catia > div > div > h3::before {
+  content: "";
+  position: absolute;
+  z-index: 5;
+  top: -30px;
+  left: 0px;
+  width: 26px;
+  height: 23px;
+
+  background-image: url(../images/Vetor2.png);
+}
+div.catia > div > div > h3 {
+  position: relative;
+  color: #2e0b35;
+  font-weight: 300;
+}
+div.catia > div > div > img {
+}
+div.catia > div > div > div > p {
+}
+div.catia > div > div > div > img {
+}
