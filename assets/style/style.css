@@ -1,20 +1,28 @@
-/*-----------------------------------------------------------------
-    Importação das fontes
-*/
-
+* {
+  font-family: "TitilliumWeb";
+}
 /*-------------------------------------
-      Importação da fonte Inter
+      Importação da fonte
   */
 
 @font-face {
-  font-family: "Inter";
-  src: url("../assets/fonts/Inter/Inter-Regular.ttf");
+  font-family: "TitilliumWeb";
+  src: url("../fonts/TitilliumWeb-Regular.ttf");
 }
-
 @font-face {
-  font-family: "Inter";
-  src: url("../assets/fonts/Inter/Inter-Thin.ttf");
-  font-weight: 100;
+  font-family: "TitilliumWeb";
+  src: url("../fonts/TitilliumWeb-Regular.ttf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "TitilliumWeb";
+  src: url("../fonts/TitilliumWeb-Bold.ttf");
+  font-weight: 600;
+}
+@font-face {
+  font-family: "TitilliumWeb";
+  src: url("../fonts/TitilliumWeb-Light.ttf");
+  font-weight: 300;
 }
 
 /*-----------------------------------------------------------------
@@ -31,6 +39,26 @@
   div.catia > div > div > div > img {
     transform: translate(10%, 10%);
   }
+  div.ferreirinha > div > div > div > img {
+    transform: translate(-10%, 10%);
+  }
+
+  div.ferreirinha > div > div > h2 {
+    text-align: end;
+  }
+  div.ferreirinha > div > div > h3 {
+    text-align: end;
+  }
+  div.ferreirinha > div > div > h3::before {
+    right: 0px;
+  }
+  div.localizacao > div > div:nth-child(2) {
+    margin-top: 3rem;
+  }
+
+  div.incomparavel > div > h2 {
+    letter-spacing: 7px;
+  }
 }
 
 @media (min-width: 763px) and (max-width: 1023px) {
@@ -43,6 +71,21 @@
   }
   div.catia > div > div > div > img {
     transform: translate(2%, 10%);
+  }
+  div.ferreirinha > div > div > div > img {
+    transform: translate(-2%, 10%);
+  }
+  div.ferreirinha > div > div > h3::before {
+    left: 0px;
+  }
+  div.sustentabilidade > div > div:nth-child(1) > div:nth-child(1) {
+    width: 71.666667%;
+  }
+  div.sustentabilidade > div > div:nth-child(1) > div:nth-child(2) {
+    width: 28.333333%;
+  }
+  div.incomparavel > div > h2 {
+    letter-spacing: 4px;
   }
 }
 
@@ -58,8 +101,27 @@
     transform: translate(12%, 10%);
   }
 
+  div.ferreirinha > div > div > div > img {
+    transform: translate(-24%, 10%);
+  }
+
   #div-image-one {
     width: 120%;
+  }
+
+  div.ferreirinha > div > div > h3::before {
+    left: 0px;
+  }
+
+  div.sustentabilidade > div > div:nth-child(1) > div:nth-child(1) {
+    width: 71.666667%;
+  }
+  div.sustentabilidade > div > div:nth-child(1) > div:nth-child(2) {
+    width: 28.333333%;
+  }
+
+  div.incomparavel > div > h2 {
+    letter-spacing: 7px;
   }
 }
 
@@ -189,4 +251,489 @@ div.catia > div > div > img {
 div.catia > div > div > div > p {
 }
 div.catia > div > div > div > img {
+}
+
+/*------------------------
+      Ferreirinha
+  */
+
+div.ferreirinha {
+}
+div.ferreirinha > div {
+  background-color: rgba(46, 11, 53, 1);
+  display: flex;
+  flex-wrap: wrap;
+}
+div.ferreirinha > div > div {
+}
+div.ferreirinha > div > div > h2 {
+  font-weight: 400;
+  color: #fff;
+}
+div.ferreirinha > div > div > h2 > span {
+  color: rgba(46, 161, 161, 1);
+  font-weight: 600;
+}
+div.ferreirinha > div > div > h3::before {
+  content: "";
+  position: absolute;
+  z-index: 5;
+  top: -30px;
+  width: 26px;
+  height: 23px;
+
+  background-image: url(../images/Vetor3.png);
+}
+div.ferreirinha > div > div > h3 {
+  position: relative;
+  color: #fff;
+  font-weight: 300;
+}
+div.ferreirinha > div > div > img {
+}
+div.ferreirinha > div > div > div > p {
+  text-align: end;
+  color: #fff;
+}
+div.ferreirinha > div > div > div > img {
+}
+
+/*------------------------
+      Privacidade
+  */
+
+div.privacidade {
+  color: #fff;
+}
+div.privacidade > div.image {
+  background-image: url(../images/Prancheta10.png);
+  background-position: left center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: cover;
+  background-color: #2e0b35;
+  height: 960px;
+  max-height: 1080px;
+}
+div.privacidade > div.image > div {
+  background-color: #2e0b35;
+  bottom: 60px;
+}
+div.privacidade > div.image > div > div {
+  margin: 0 auto;
+}
+div.privacidade > div.image > div > div > h3 {
+  font-weight: 400;
+}
+div.privacidade > div.image > div > div > h3 > img {
+  transform: translate(0px, -3px);
+}
+div.privacidade > div.image > div > div > p {
+}
+
+/*------------------------
+      Natureza
+  */
+
+div.natureza {
+  color: #fff;
+}
+div.natureza > div.image {
+  background-image: url(../images/Prancheta11.png);
+  background-position: right center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: cover;
+  background-color: #2e0b35;
+  height: 960px;
+  max-height: 1080px;
+}
+div.natureza > div.image > div {
+  background-color: #2e0b35;
+  bottom: 60px;
+}
+div.natureza > div.image > div > div {
+  margin: 0 auto;
+}
+div.natureza > div.image > div > div > h3 {
+  font-weight: 400;
+}
+div.natureza > div.image > div > div > h3 > img {
+  transform: translate(0px, -3px);
+}
+div.natureza > div.image > div > div > p {
+}
+
+/*------------------------
+      Exclusividade
+  */
+
+div.exclusividade {
+  color: #fff;
+}
+div.exclusividade > div.image {
+  background-image: url(../images/Prancheta12.png);
+  background-position: left center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: cover;
+  background-color: #2e0b35;
+  height: 960px;
+  max-height: 1080px;
+}
+div.exclusividade > div.image > div {
+  background-color: #2e0b35;
+  bottom: 60px;
+}
+div.exclusividade > div.image > div > div {
+  margin: 0 auto;
+}
+div.exclusividade > div.image > div > div > h3 {
+  font-weight: 400;
+}
+div.exclusividade > div.image > div > div > h3 > img {
+  transform: translate(0px, -3px);
+}
+div.exclusividade > div.image > div > div > p {
+}
+
+/*------------------------
+      Slide Sonhos
+  */
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+div.slide-sonhos > div.sonhos > div > img {
+  object-fit: contain;
+  height: 100%;
+  max-height: 1080px;
+}
+div.slide-sonhos > div.sonhos > div > h3 {
+  color: #fff;
+  text-transform: uppercase;
+}
+.swiper-pagination-bullet-active {
+  background-color: #fff !important;
+}
+.swiper-pagination-bullet {
+  border: 2px solid #fff;
+}
+
+/*------------------------
+      Localização
+  */
+
+div.localizacao {
+}
+div.localizacao > div {
+  background-image: url(../images/pattern-2.png);
+  background-position: right bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: cover;
+
+  flex-wrap: wrap;
+
+  min-height: 680px !important;
+}
+div.localizacao > div > div {
+}
+div.localizacao > div > div > img {
+}
+div.localizacao > div > div > h3 {
+  color: #2e0b35;
+}
+div.localizacao > div > div > p {
+  font-size: 14px;
+}
+
+/*------------------------
+      Terrenos
+  */
+
+div.terrenos > {
+}
+div.terrenos > div {
+}
+div.terrenos > div > div:nth-child(1) {
+  background-color: #2e0b35;
+}
+div.terrenos > div > div > div {
+  background-color: #4c095a;
+}
+div.terrenos > div > div > div > h3 {
+  color: rgba(46, 161, 161, 1);
+}
+div.terrenos > div > div > div > h4 {
+  color: #fff;
+  font-weight: 400 !important;
+}
+div.terrenos > div > div > img {
+  z-index: -1;
+  transform: translate(0, -20px);
+}
+div.terrenos > div > img {
+}
+
+/*------------------------
+      Sustentabilidade
+  */
+
+div.sustentabilidade {
+}
+div.sustentabilidade > div {
+}
+div.sustentabilidade > div > div {
+}
+div.sustentabilidade > div > div:nth-child(2) {
+  background-image: url(../images/pattern-1.png);
+  background-position: right bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: cover;
+
+  min-height: 65px;
+}
+div.sustentabilidade > div > div > div:nth-child(1) {
+}
+div.sustentabilidade > div > div > div:nth-child(1) {
+}
+div.sustentabilidade > div > div > div > img {
+}
+div.sustentabilidade > div > div:nth-child(2) > div {
+  background-color: #2e0b35;
+}
+div.sustentabilidade > div > div > div > h3 {
+  color: rgba(46, 161, 161, 1);
+}
+div.sustentabilidade > div > div > div p {
+  color: #fff;
+  font-size: 12px;
+}
+
+/*------------------------
+      Incomparável
+  */
+
+div.incomparavel > {
+  overflow-x: hidden;
+}
+div.incomparavel > div {
+}
+div.incomparavel > div > div:nth-child(1) {
+  background-image: url(../images/pattern-1.png);
+  background-position: right bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: cover;
+}
+div.incomparavel > div > div > div {
+  background-color: #4c095a;
+}
+div.incomparavel > div > div > div > h3 {
+  color: rgba(46, 161, 161, 1);
+}
+div.incomparavel > div > div > div > h4 {
+  color: #fff;
+  font-weight: 400 !important;
+}
+div.incomparavel > div > div > img {
+}
+div.incomparavel > div > img {
+  max-height: 700px;
+  overflow-x: hidden;
+  object-fit: cover;
+}
+
+div.incomparavel > div > h2 {
+  transform: translate(50%, -20px);
+  color: #fff;
+  font-weight: 400;
+}
+
+/*------------------------
+      Momentos
+  */
+
+div.momentos {
+  background-image: url(../images/grandes-dias.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: cover;
+
+  min-height: 900px;
+}
+div.momentos > h2 {
+  margin: 0 auto;
+  color: #fff;
+}
+
+/*------------------------
+      Investir
+  */
+
+div.investir {
+  background-image: url(../images/pattern-3.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: cover;
+
+  min-height: 380px;
+}
+div.investir > h3 {
+  margin: 0 auto;
+  color: #fff;
+  font-weight: 400;
+}
+
+/*------------------------
+      Aproveitar
+  */
+
+div.aproveitar {
+  min-height: 380px;
+}
+div.aproveitar > div > h4 {
+  color: #2e0b35;
+  font-weight: 400;
+}
+
+div.aproveitar > div > h5 {
+  color: #2e0b35;
+  font-weight: 300;
+}
+
+div.aproveitar > img {
+  object-fit: cover;
+}
+
+/*------------------------
+      Obras
+  */
+
+div.obras {
+  min-height: 380px;
+}
+div.obras > div:nth-child(1) {
+  background-color: #2e0b35;
+}
+div.obras > div > h3 {
+  margin: 0 auto;
+  color: #fff;
+  font-weight: 400;
+}
+
+div.obras > div > h3::before {
+  content: "";
+  position: absolute;
+  z-index: 5;
+  top: 10px;
+  left: -30px;
+  width: 26px;
+  height: 23px;
+
+  background-image: url(../images/Vetor3.png);
+}
+
+div.obras > div:nth-child(2) {
+  margin: 0 auto;
+}
+
+div.obras > div > p {
+  color: #2e0b35;
+}
+
+div.obras > div > img {
+  object-fit: cover;
+}
+
+/*------------------------
+      Planta Baixa
+  */
+
+div.plantaBaixa {
+  background-color: #8fd7d6;
+}
+div.plantaBaixa > div {
+}
+div.plantaBaixa > div > div {
+  margin: 0 auto;
+}
+div.plantaBaixa > div > div > h3 {
+  font-weight: 400;
+  text-transform: uppercase;
+}
+div.plantaBaixa > div > div > p {
+}
+div.plantaBaixa > div > div > img {
+  object-fit: contain;
+}
+div.plantaBaixa > div > div > a {
+  display: block;
+  border: none;
+  background-color: #2e0b35 !important;
+  margin: 0 auto;
+  text-align: center;
+}
+div.plantaBaixa > div > div > a > span {
+  color: #fff;
+  font-weight: 300;
+  text-align: center;
+}
+
+/*------------------------
+      Informações
+  */
+
+div.informacoes {
+  background-color: #2e0b35;
+}
+div.informacoes > div {
+  margin: 0 auto;
+}
+div.informacoes > div {
+}
+div.informacoes > div > h4 {
+  color: #fff;
+}
+div.informacoes > div > h5 {
+  color: #fff;
+  font-weight: 300;
+}
+div.informacoes > div > form {
+}
+div.informacoes > div > form > div {
+}
+div.informacoes > div > form > div > label {
+  font-weight: 300;
+  color: #2e0b35;
+}
+div.informacoes > div > form > div > input {
+  border-radius: 8px;
+  background-color: #fff;
+}
+div.informacoes > div > form > div > textarea {
+  border-radius: 8px;
+  background-color: #fff;
+}
+div.informacoes > div > form > button {
+  background-color: #fff;
+  border-radius: 8px;
+  font-weight: 500;
+  color: #2e0b35;
+}
+
+/*------------------------
+      Rodapé
+  */
+
+footer {
+  background-color: #2e0b35;
+}
+footer > img {
+  width: 120px;
+  margin: 0 auto;
 }
