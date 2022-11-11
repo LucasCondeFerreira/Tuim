@@ -56,6 +56,10 @@
     margin-top: 3rem;
   }
 
+  div.slide-sonhos > div.sonhos > div > img {
+    max-width: 160% !important;
+  }
+
   div.incomparavel > div > h2 {
     letter-spacing: 7px;
   }
@@ -405,8 +409,7 @@ div.exclusividade > div.image > div > div > p {
   height: 100%;
 }
 div.slide-sonhos > div.sonhos > div > img {
-  object-fit: contain;
-  height: 100%;
+  object-fit: cover;
   max-height: 1080px;
 }
 div.slide-sonhos > div.sonhos > div > h3 {
