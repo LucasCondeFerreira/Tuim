@@ -1,43 +1,24 @@
-# Informações sobre a LP:
+![Logo](./assets/images/Camada8.png)
 
-## Link do design:
+## Screenshots
 
-https://www.figma.com/file/frSFlNSr9Ln8wGMFwwsh67/landing-page-para-html?node-id=3%3A62
+![App Screenshot](./assets/screenshots/Captura%20de%20tela%20de%202022-11-18%2019-47-09.png)
+![App Screenshot](./assets/screenshots/Captura%20de%20tela%20de%202022-11-18%2019-47-28.png)
+![App Screenshot](./assets/screenshots/Captura%20de%20tela%20de%202022-11-18%2019-47-33.png)
+![App Screenshot](./assets/screenshots/Captura%20de%20tela%20de%202022-11-18%2019-47-39.png)
+![App Screenshot](./assets/screenshots/Captura%20de%20tela%20de%202022-11-18%2019-47-54.png)
+![App Screenshot](./assets/screenshots/Captura%20de%20tela%20de%202022-11-18%2019-48-17.png)
 
-<br>
+# Landing Page Tuim
 
-## Cores da página:
+Esse projeto consiste em uma Landing Page desenvolvida para o condomínio em construção Tuim, com o intuito de divulgar e captar novos investidores.
 
-<br>
+## 🚀 Sobre mim
 
-### Azul escuro
+Sempre buscando por conhecimento e me desenvolver, conheci a programação e me interessei demais pela mesma e por estar constantemente resolvendo problemas utilizando a tecnologia.
 
-    #0a093d
+Trabalhando na área de tecnologia há pouco mais de um ano, obtive experiência em Stackweb (HTML, CSS, JavaScript) juntamente com, AJAX, PHP e bancos MySQL trabalhando com a criação de sites responsivos, modernos e seguindo as melhores práticas de UX DESIGN.
 
-### Azul
+## Stack utilizada
 
-    #217BF4
-
-### Azul claro
-
-    #C9F0FF
-
-### Marrom
-
-    #413F3F
-
-<br>
-
-## Fontes da página:
-
-<br>
-
-### Inter
-
-https://fonts.google.com/specimen/Inter?query=Inter
-
-<br>
-
-### Poppins
-
-https://fonts.google.com/specimen/Poppins?query=poppins
+**Front-end:** HTML5, CSS3, Javascript
